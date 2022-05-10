@@ -1,0 +1,156 @@
+.product {
+  list-style: none;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid rgb(189, 189, 189);
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 18px;
+}
+
+.product ul {
+  display: flex;
+  list-style: none;
+}
+
+.product ul li {
+  margin-right: 20px;
+}
+
+.product ul li strong {
+  margin-right: 5px;
+}
+
+.product .btn {
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  padding: 0px 20px 2px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.product .delete {
+  border: 2px solid crimson;
+  color: crimson;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.product .delete:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+.product .increment,
+.product .dicrement {
+  color: blueviolet;
+  background-color: transparent;
+  border: 2px solid blueviolet;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.product .increment:hover,
+.product .dicrement:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.product .btnBox {
+  display: flex;
+}
+
+.product .btnBox input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #333;
+}
+
+.product span.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  color: purple;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+.product .remove {
+  color: crimson;
+  border: 2px solid crimson;
+  background-color: transparent;
+  padding: 2px 15px 0px 15px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.product .remove:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+@media (max-width: 1230px) {
+  .product {
+    width: 95%;
+  }
+}
+
+@media (max-width: 950px) {
+  .product .btn {
+    padding: 0px 15px 2px 15px;
+  }
+
+  .product .remove {
+    padding: 2px 15px 0px 15px;
+  }
+}
+
+@media (max-width: 760px) {
+  .product ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 660px) {
+  .product .btn {
+    margin-left: 10px;
+  }
+
+  .product span.quantity {
+    margin: 0;
+  }
+
+  .product {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .product ul {
+    flex-direction: row;
+    margin-bottom: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .product .btnBox {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .product ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
